@@ -1,4 +1,4 @@
- ```css
+
 :root{--ink:#172033;--muted:#667085;--line:#e7eaf0;--accent:#2563eb;--paper:#fff;--soft:#f7f9fc}
 
 *{box-sizing:border-box}
@@ -94,6 +94,12 @@ font-weight:700
 
 .primary{background:var(--accent);color:white}
 .secondary{border:1px solid #cfd6e2;color:var(--ink)}
+
+/* Download CV - Bold Black Text Only */
+.actions a[href="Ankan_Bera_portfolio.pdf"]{
+color:#000000 !important;
+font-weight:900 !important;
+}
 
 .social{display:flex;gap:24px}
 
