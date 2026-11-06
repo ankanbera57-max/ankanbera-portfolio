@@ -13,9 +13,13 @@
 --image-bg:#F3F6FA;
 }
 
-*{box-sizing:border-box}
+*{
+box-sizing:border-box;
+}
 
-html{scroll-behavior:smooth}
+html{
+scroll-behavior:smooth;
+}
 
 body{
 margin:0;
@@ -26,7 +30,7 @@ line-height:1.65;
 transition:background .3s ease,color .3s ease;
 }
 
-/* DARK MODE COLORS */
+/* DARK MODE */
 
 body.dark-mode{
 --ink:#f1f5f9;
@@ -65,21 +69,30 @@ color:var(--ink);
 text-decoration:none;
 }
 
-.brand span,.hero h1 span{color:var(--accent)}
+.brand span,
+.hero h1 span{
+color:var(--accent);
+}
 
-nav{display:flex;gap:28px}
+nav{
+display:flex;
+gap:28px;
+}
 
-nav a,.social a{
+nav a,
+.social a{
 color:var(--muted);
 text-decoration:none;
 font-size:.94rem;
 }
 
-nav a:hover,.social a:hover,.project-link:hover{
+nav a:hover,
+.social a:hover,
+.project-link:hover{
 color:var(--accent);
 }
 
-/* HEADER BUTTONS */
+/* HEADER CONTROLS */
 
 .header-controls{
 display:flex;
@@ -115,7 +128,7 @@ color:var(--ink);
 cursor:pointer;
 }
 
-/* HERO SECTION */
+/* HERO */
 
 .hero{
 max-width:1120px;
@@ -177,7 +190,7 @@ border:1px solid #cfd6e2;
 color:var(--ink);
 }
 
-/* DOWNLOAD CV - BOLD BLACK TEXT */
+/* DOWNLOAD CV */
 
 .actions a[href="Ankan_Bera_portfolio.pdf"]{
 color:#000000 !important;
@@ -223,7 +236,8 @@ letter-spacing:-.03em;
 margin:0 0 22px;
 }
 
-.section-intro,.muted{
+.section-intro,
+.muted{
 max-width:850px;
 color:var(--muted);
 font-size:1.05rem;
@@ -231,14 +245,16 @@ font-size:1.05rem;
 
 /* ABOUT */
 
-.facts,.skill-grid{
+.facts,
+.skill-grid{
 display:grid;
 grid-template-columns:repeat(3,1fr);
 gap:16px;
 margin-top:30px;
 }
 
-.facts div,.skill-card{
+.facts div,
+.skill-card{
 padding:20px;
 border:1px solid var(--line);
 border-radius:12px;
@@ -252,7 +268,9 @@ color:var(--muted);
 margin-bottom:5px;
 }
 
-.facts strong{font-size:.95rem}
+.facts strong{
+font-size:.95rem;
+}
 
 .soft{
 max-width:none;
@@ -268,11 +286,15 @@ margin-right:auto;
 
 /* SKILLS */
 
-.skill-card h3,.project h3,.cert h3{
+.skill-card h3,
+.project h3,
+.cert h3{
 margin:0 0 8px;
 }
 
-.skill-card p,.project p,.cert p{
+.skill-card p,
+.project p,
+.cert p{
 color:var(--muted);
 margin:0;
 }
@@ -295,8 +317,6 @@ box-shadow:0 5px 20px #17203308;
 transition:background .3s ease,border-color .3s ease;
 }
 
-/* Dashboard images - full image without cropping */
-
 .project>img{
 display:block;
 width:100%;
@@ -307,7 +327,9 @@ object-position:center;
 background:var(--image-bg);
 }
 
-.project-body{padding:20px}
+.project-body{
+padding:20px;
+}
 
 .tag{
 display:inline-block;
@@ -345,8 +367,6 @@ overflow:hidden;
 transition:background .3s ease,border-color .3s ease;
 }
 
-/* Certificate images - full certificate visible */
-
 .cert img{
 display:block;
 width:100%;
@@ -357,11 +377,17 @@ background:var(--card);
 padding:10px;
 }
 
-.cert div{padding:16px}
+.cert div{
+padding:16px;
+}
 
-.cert h3{font-size:1rem}
+.cert h3{
+font-size:1rem;
+}
 
-.cert p{font-size:.9rem}
+.cert p{
+font-size:.9rem;
+}
 
 /* CONTACT */
 
@@ -401,9 +427,13 @@ font-size:.88rem;
 
 @media(max-width:760px){
 
-.topbar{height:66px}
+.topbar{
+height:66px;
+}
 
-.menu-toggle{display:block}
+.menu-toggle{
+display:block;
+}
 
 nav{
 display:none;
@@ -418,7 +448,9 @@ flex-direction:column;
 gap:12px;
 }
 
-nav.open{display:flex}
+nav.open{
+display:flex;
+}
 
 .hero{
 grid-template-columns:1fr;
@@ -427,9 +459,14 @@ padding-top:60px;
 text-align:center;
 }
 
-.lead{margin:auto}
+.lead{
+margin:auto;
+}
 
-.actions,.social{justify-content:center}
+.actions,
+.social{
+justify-content:center;
+}
 
 .actions{
 flex-wrap:wrap;
@@ -440,7 +477,10 @@ width:220px;
 grid-row:1;
 }
 
-.facts,.skill-grid,.project-grid,.cert-grid{
+.facts,
+.skill-grid,
+.project-grid,
+.cert-grid{
 grid-template-columns:1fr;
 }
 
